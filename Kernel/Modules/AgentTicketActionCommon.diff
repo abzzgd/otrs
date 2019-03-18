@@ -1,0 +1,6 @@
+343d342
+< $GetParam{Subject} = $Ticket{State} . ' -> ';
+403d401
+< $GetParam{Subject} .= $DynamicFieldValues{ITSMDecisionResult};
+673d670
+< $GetParam{Subject} .= $StateData{Name};
