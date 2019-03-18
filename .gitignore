@@ -1,2 +1,4 @@
 # Игнор-лист файлов проекта
 /var/*
+/Kernel/Config*
+/Kernel/Config/*

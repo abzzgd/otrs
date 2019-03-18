@@ -340,6 +340,7 @@ sub Run {
         $GetParam{$Key} = $ParamObject->GetParam( Param => $Key );
     }
 
+    $GetParam{Subject} = $Ticket{State} . ' -> ';
     # ACL compatibility translation
     my %ACLCompatGetParam = (
         StateID       => $GetParam{NewStateID},
@@ -399,6 +400,7 @@ sub Run {
         }
 # ---
     }
+    $GetParam{Subject} .= $DynamicFieldValues{ITSMDecisionResult};
 # ---
 # ITSMIncidentProblemManagement
 # ---
@@ -668,6 +670,7 @@ sub Run {
             my %StateData = $StateObject->StateGet(
                 ID => $GetParam{NewStateID},
             );
+            $GetParam{Subject} .= $StateData{Name};
 
             # check state type
             if ( $StateData{TypeName} =~ /^pending/i ) {
