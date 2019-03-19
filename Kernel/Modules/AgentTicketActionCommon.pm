@@ -2682,17 +2682,17 @@ sub _Mask {
             || $ConfigObject->Get('Ticket::Frontend::NeedAccountedTime')
             )
         {
-            $LayoutObject->Block(
-                Name => 'SubjectLabelMandatory',
-            );
+#            $LayoutObject->Block(
+#                Name => 'SubjectLabelMandatory',
+#            );
             $LayoutObject->Block(
                 Name => 'RichTextLabelMandatory',
             );
         }
         else {
-            $LayoutObject->Block(
-                Name => 'SubjectLabel',
-            );
+#            $LayoutObject->Block(
+#                Name => 'SubjectLabel',
+#            );
             $LayoutObject->Block(
                 Name => 'RichTextLabel',
             );

@@ -352,8 +352,8 @@
                             <label class="Mandatory" for="Subject"><span class="Marker">*</span>[% Translate("Subject") | html %]:</label>
 [% RenderBlockEnd("SubjectLabelMandatory") %]
                             <div class="Field">
-                                 <input type="text" id="Subject" name="Subject" value="[% Data.Subject | html %]" class="W75pc Validate [% Data.SubjectInvalid %] [% Data.SubjectRequired %]"/>
-                                 <div id="SubjectError" class="TooltipErrorMessage"><p>[% Translate("This field is required.") | html %]</p></div>
+ <!--                                <input type="text" id="Subject" name="Subject" value="[% Data.Subject | html %]" class="W75pc Validate [% Data.SubjectInvalid %] [% Data.SubjectRequired %]"/>
+     -->                            <div id="SubjectError" class="TooltipErrorMessage"><p>[% Translate("This field is required.") | html %]</p></div>
                                 <div id="SubjectServerError" class="TooltipErrorMessage"><p>[% Translate("This field is required.") | html %]</p></div>
                             </div>
                             <div class="Clear"></div>
